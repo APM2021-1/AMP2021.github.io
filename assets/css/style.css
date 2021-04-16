@@ -3,7 +3,20 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444;
 }
-
+.content{
+  height: 500px;
+  width: 750px;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+}
+.content .images{
+  height: 100%;
+  width: 100%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
+}
 a {
   color: #4fa6d5;
   text-decoration: none;
@@ -683,11 +696,11 @@ section {
 }
 
 .services .icon-box-green .icon i {
-  color: #41cf2e;
+  color: #21a310af;
 }
 
 .services .icon-box-green:hover {
-  border-color: #41cf2e;
+  border-color: #21a310af;
 }
 
 .services .icon-box-blue .icon {
