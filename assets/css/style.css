@@ -3,6 +3,12 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444;
 }
+
+ul {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
 .content{
   height: 500px;
   width: 750px;
