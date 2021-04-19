@@ -4,12 +4,7 @@ body {
   color: #444;
 }
 
-ul.c3{
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-}
-.content{
+content{
   height: 500px;
   width: 750px;
   overflow: hidden;
@@ -35,6 +30,13 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Roboto", sans-serif;
+}
+
+/*------List*/
+ul.c3{
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
 }
 
 /*--------------------------------------------------------------
