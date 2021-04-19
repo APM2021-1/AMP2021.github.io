@@ -4,7 +4,7 @@ body {
   color: #444;
 }
 
-ul {
+ul.three{
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3;
