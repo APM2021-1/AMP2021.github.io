@@ -53,14 +53,15 @@
               <li><a href="planeacion.html">Gestión de Proyecto</a></li>
               <li><a href="planta.html">Gestión de Producción y Automatización</a></li>
               <li><a href="indu4.0.html">Automatización e Industria 4.0</a></li>
-              <li><a href="celda.html">Celda de manufactura Robotizadas</a></li>
+              <li><a href="celda.html">Celda de manufactura Robotizada</a></li>
               <li><a href="digitalf.html">Digital Factory</a></li>
               <li><a href="controladores.html">Controladores industriales (PLC)</a></li>
               <li><a href="actuadores.html">Actuadores en Automatización</a></li>
               <li><a href="scada.html">Sistema de Supervisión SCADA</a></li>
+              <li><a href="economica.html">Evaluación económica del Proyecto</a></li>
             </ul>
           </li>
-          <li><a href="team.html">Contáctanos</a></li>
+          <li><a href="team.html">Integrantes</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -81,11 +82,33 @@
             <li>Automatización e Industria 4.0</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Our Portfolio Section -->
 
     <!-- ======= Portfolio Section ======= -->
+
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <div class="icon-box">
+          <p>La arquitectura implementada para el desarrollo del proyecto, se basa en la pirámide de la automatización.<br/></p>
+            <ol>
+              <li>En el primer nivel o nivel de planta (Sensores y Actuadores) se realizara al implementar el módulo Mechatronics Concept Designer de Siemens NX para los procesos a amortizar en el proceso de producción de la bicicleta, adicionalmete se hará el uso de RobotStudio de la firma ABB con el objetivo de simular la celda robotizada.</li>
+              <li>En el nivel de Control se tendrá la simulación de un PLC en el entorno de Studio5000, de Rockwell Automation.</li>
+              <li>Para el nivel SCADA o de supervisión se utilizará el Ignition de Inductive Automation, actuando como intermediario de comunicaciones por medio del protocolo OPC, adicionalmente la implementación de comunicación a través de Google Cloud.</li>
+              <li>Respecto al nivel de planeación o MES (Manufacturing Execution System) se hará uso del software Tecnomatix-Plant Simulation, el cual permite la planificación y toma de decisiones respecto a la planta.</li>
+            </ol>
+          <p>Para el manejo del sistema de comunicación, se instalaran lo diferentes software en los diferentes equipos
+            de los estudiantes del equipo de trabajo:</p>
+          <ul>
+            <li>RobotStudio: Angel Diaz y Gabriel Acevedo</li>
+            <li>Studio5000: Felipe Romero y Sergio Quintero.</li>
+            <li>Siemens NX: Álvaro Chaves .</li>
+          </ul>
+          <br />
+        </div>
+      </div>
+
+      </div>
     <section class="service-details" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
 
@@ -125,54 +148,40 @@
             </div>
 
           </div>
-      </div>
+        </div>
 
 
         <div class="card-img">
-            <div class="content" data-aos="fade-up" date-aos-delay="200">
+          <div class="content" data-aos="fade-up" date-aos-delay="200">
 
-            </div>
           </div>
+        </div>
 
-            <div class="card-img">
-                
-          </div>
+        <div class="card-img">
 
-      </div>
-    </section>
-
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-
-
-            <div class="icon-box">
-              <p class="description">Para el manejo del sistema de comunicación, se instalaran lo diferentes software en los diferentes equipos de los estudiantes del equipo de trabajo:</p>
-              <ul >
-                <li>RobotStudio: Angel Diaz y Gabriel Acevedo</li>
-                <li>Studio5000: Felipe Romero y Sergio Quintero.</li>
-                <li>Siemens NX: Álvaro Chaves .</li>
-            </ul>
-            </div>
         </div>
 
       </div>
     </section>
 
+
+    </section>
+
   </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
-<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-  <div class="container">
-    <div class="credits">
-      Repositorio de Trabajo en Github (Enlace)
-      <a href="https://github.com/APM2021-1" class="github"><i class="bx bxl-github"></i></a>
+    <div class="container">
+      <div class="credits">
+        Repositorio de Trabajo en Github (Enlace)
+        <a href="https://github.com/APM2021-1" class="github"><i class="bx bxl-github"></i></a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-    class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -189,7 +198,7 @@
     var slideIndex = 0;
     carousel1();
     function carousel1() {
-      var i=0;
+      var i = 0;
       var x = document.getElementsByClassName("1");
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -201,21 +210,21 @@
     }
   </script>
 
-<script>
-  var slide = 0;
-  carousel();
-  function carousel() {
-    var i=0;
-    var y = document.getElementsByClassName("2");
-    for (i = 0; i < y.length; i++) {
-      y[i].style.display = "none";
+  <script>
+    var slide = 0;
+    carousel();
+    function carousel() {
+      var i = 0;
+      var y = document.getElementsByClassName("2");
+      for (i = 0; i < y.length; i++) {
+        y[i].style.display = "none";
+      }
+      slide++;
+      if (slide > y.length) { slide = 1 }
+      y[slide - 1].style.display = "block";
+      setTimeout(carousel, 1000);
     }
-    slide++;
-    if (slide > y.length) { slide = 1 }
-    y[slide - 1].style.display = "block";
-    setTimeout(carousel, 1000);
-  }
-</script>
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
