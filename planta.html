@@ -59,7 +59,7 @@
             </ul>
           </li>
           <li><a href="team.html">Integrantes</a></li>
-          <li><a href="Profesores.html">Profesores</a></li>
+          <li><a href="Profesores.html">Asignatura</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -185,15 +185,11 @@
         <h1>Tecnomatix Plant Simulation</h1>
         <hr>
         <h2>Plantas de Producción</h2>
-        <p>En el proceso de fabricación de bicicletas de bambú la elaboración del marco es el proceso
-          que se diferencia respecto a la fabricación de bicicletas convencionales. En particular,
-          para este tipo de proceso identificamos dos técnicas diferentes. La primera consiste en realizar
-          las uniones de los tubos mediante la implementación de fibras y resinas, la otra técnica consiste en implementar
-          elementos metálicos de unión llamados en inglés Lugs, los cuales son secciones de tubo 
-          cortadas y soldadas para unir los tubos de bambú del marco de la bicicleta, dichos tubos de bambú 
-          son ensamblados a los Lugs utilizando pegamentos industriales. Por lo tanto se simularon dieferentes
-          procesos de fabricación en los cuales las diferencias más grandes se evidencian en los métodos
-          de elaboración del marco.</p>
+        <p>En el proceso de fabricación de bicicletas de bambú la elaboración del marco es el proceso que se diferencia respecto a la fabricación de bicicletas convencionales. En particular, para este tipo de proceso identificamos dos técnicas diferentes. Por lo tanto se simularon diferentes procesos de fabricación en los cuales las diferencias más grandes se evidencian en los métodos de elaboración del marco. Dichas simulaciones se hicieron a partir de los siguientes diseños de plantas:</p>
+ <br>
+<p> En los dos primeros casos se muestra el diseño de una planta para fabricación de bicicleta híbrida y de contrapedal con fabricación manual de marco. Como se mencionó anteriormente, la principal diferencia entre una bicicleta urbana híbrida y de contrapedal es la presencia o ausencia respectivamente de un sistema de frenos y de cambios. Asimismo, se mencionó que para la fabricación manual del marco se implementan resinas y fibras, las cuales se encargan de unir los palos de bambú correspondientes.  
+</p>
+         
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-lg-6 video-box">
@@ -204,8 +200,10 @@
             <div class="col-lg-6 video-box">
               <iframe src="https://drive.google.com/file/d/1RHIskOMLOwDLD9zGI-eFzLMC2SKCQAo9/preview"
                 width="100%" height="300"></iframe>
-              <p>Planta Bicicleta Urbana.</p>
+              <p>Planta Bicicleta Urbana.</p> <br><br>
             </div>
+            <p> En los dos siguientes casos se muestran los diseños para fábricas de bicicletas urbanas híbridas y de contrapedal cuyos marcos son armados mediante elementos metálicos de unión llamados en inglés Lugs,, los cuales son secciones de tubo cortadas y soldadas para unir los tubos de bambú del marco de la bicicleta, dichos tubos de bambú son ensamblados a los Lugs utilizando pegamentos industriales.
+            </p>
             <div class="col-lg-6 video-box">
               <iframe src="https://drive.google.com/file/d/1RFPSAC-AZVWvLIcjRUyMVnX4ZfZfDeM2/preview"
                 width="100%" height="300"></iframe>
@@ -214,8 +212,10 @@
             <div class="col-lg-6 video-box">
               <iframe src="https://drive.google.com/file/d/1ROrbBUTENq4u2X4BSTEP6vneNGWgksex/preview"
                 width="100%" height="300"></iframe>
-              <p>Planta Bicicleta Urbana Lugs.</p>
+              <p>Planta Bicicleta Urbana Lugs.</p><br><br>
             </div>
+          <p>En los dos últimos casos se muestras los diseños para fábricas de bicicletas urbanas híbridas y de contrapedal cuyos marcos son armados mediante lugs, pero esta vez se tiene un diseño más fiel a un caso real en el que no se cuenta con multiples estaciones de procesos, sino que una misma estación se encarga de mecanizar diferentes piezas (como es el caso de las estaciones de lijado, corte o boca de pescado, en donde se pasó a tener una sola estación que procesa tubos de diferentes diámetros y longitudes)..</p>
+          </p>
             <div class="col-lg-6 video-box">
               <iframe src="https://drive.google.com/file/d/1RH19-sSioDPpgQ_pYNFl83wGjplDF6t6/preview"
                 width="100%" height="300"></iframe>
@@ -230,6 +230,16 @@
         </div>
 
         <hr>
+        <h2>Comparación de producción</h2>
+        <p>En la Tabla que se expone a continuación se puede ver una comparación en la producción de un mes de las diferentes plantas simuladas explicadas anteriormente. Es importante resaltar que el campo "Throughput per Day" hace referencia a un tiempo de 24 horas.</p>
+        <img src="assets/img/PlantSimu/Tabla.PNG" class="img-fluid" alt="">
+        <p>En este caso particular podemos ver como la implementación de Lugs mejora en 3,5 veces
+        la producción de bicicletas, pero a la vez la disminución de las estaciones de trabajo
+        limita el correcto desempeño de la planta con el método más optimo de fabricación del marco.</p>
+
+
+        <hr>
+
         <h2>Flujo de material</h2>
         <p>A continuación, se muestran las estadísticas de las estaciones en las cuales se tiene un porcentaje de tiempo
           de trabajo mayor en las plantas que utilizan el método de Lugs implementando una estación para más de un proceso
@@ -266,22 +276,20 @@
           </div>
         </div>
         <hr>
-        <h2>Comparación de producción</h2>
-        <p>En la Tabla que se expone a continuación se puede ver una comparación en la producción
-          de un mes de las diferentes plantas simuladas. Es importante resaltar que el campo
-          "Throughput per Day" hace referencia a un tiempo de 24 horas.</p>
-        <img src="assets/img/PlantSimu/Tabla.PNG" class="img-fluid" alt="">
-        <p>En este caso particular podemos ver como la implementación de Lugs mejora en 3,5 veces
-        la producción de bicicletas, pero a la vez la disminución de las estaciones de trabajo
-        limita el correcto desempeño de la planta con el método más optimo de fabricación del marco.</p>
-
-
-        <hr>
         <h2>VSM</h2>
 
         <p>El diagrama VSM es  permite visualizar todo el proceso, en donde se observa tanto el flujo de información como de materiales necesarios para que un producto, en este caso, tanto la Bicicleta Urbana como la Bicicleta Hibrida, desde los proveedores hasta la  llegada al cliente, adicionalmente permite observar las actividades que no agregan valor al proceso para posteriormente iniciar las actividades necesarias para eliminarlas.</p>
-        <iframe src="https://drive.google.com/file/d/1ZG1sUa5ajdDpbLxFMmN_A2cPZQhhhpRN/preview"width="100%" height="400"></iframe>
-        <iframe src="https://drive.google.com/file/d/1Zbfyy_qKClTHTztZXt7sROnu04yu1HJ8/preview"width="100%" height="400"></iframe>
+        <div class="row">
+        <div class="col-lg-6 video-box">
+          <iframe src="https://drive.google.com/file/d/1ZG1sUa5ajdDpbLxFMmN_A2cPZQhhhpRN/preview"width="100%" height="230"></iframe>
+        </div>
+        <div class="col-lg-6 video-box">
+          <iframe src="https://drive.google.com/file/d/1Zbfyy_qKClTHTztZXt7sROnu04yu1HJ8/preview"width="100%" height="230"></iframe>
+        </div>
+
+        </div>
+        
+        
         <p>A continuación, se presentan los tiempos de producción de 3 bicicletas por día, tanto para la referencia de Bicicleta Urbana como Hibrida,Cabe destacar que se realizo una prueba a la planta durante 30 días para evaluar si estos tiempos se mantenían de forma apropiada. Adicionalmente los tiempos correspondientes a la producción de una bicicleta de cada referencia, donde se evidencia que fracción del tiempo permite adicionar valor, que fracción se emplea en transporte y en tiempos de espera.</p>
 
         <br/>
@@ -329,11 +337,13 @@
     <div class="container">
       <div class="credits">
         Repositorio de Trabajo en Github (Enlace)
-        <a href="https://github.com/APM2021-1" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://github.com/APM2021-1" class="github"><i class="bx bxl-github"></i></a> &nbsp  &nbsp    &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp&nbsp  &nbsp    &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <img src="assets/img/Escudo1.png">  
+        <img src="assets/img/Escudo2.png"> 
       </div>
     </div>
   </footer>
-
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
