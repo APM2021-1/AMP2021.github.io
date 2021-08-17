@@ -89,9 +89,9 @@
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>Diagrama neumático y eléctrico </h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Acorde a los procesos a automatizar seleccionados, se muestra a continuación el diagrama eléctrico y neumático para cada uno:</p>
     </div>
-    <h3>Corte de bambú.</h3>
+    <h3>Máquina para corte de bambú.</h3>
     <section class="service-details" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
 
@@ -114,7 +114,7 @@
         </div>
       </div>
     </section>
-    <h3>Corte y boca de pescado aluminio.</h3>
+    <h3>Máquina para corte tipo boca de pescado y tipo transversal en tubos de aluminio.</h3>
     <section class="service-details" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
 
@@ -144,27 +144,102 @@
 
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>Sensores y Actuadores</h2>
-        <p>Acorde a los procesos a automatizar seleccionados, se muestra a continuación el diagrama eléctrico y neumático para cada uno.</p>
-      
-        <p>En este caso, para la selección de cilindros se tuvo en cuenta la longitud que estos deberían tener, además de la fuerza de fricción y se utilizaron las siguientes ecuaciones para estimar:
-        </p>
-        <div align="center"><img src="assets/img/eq1.png"></div>
-        <p>De igual forma para determinar la fuerza de pandeo se implementó la ecuación:
-        </p> 
-        <div align="center"><img src="assets/img/eq2.png"></div>
-        <p>
-          Siendo E el módulo de elasticidad (acero inoxidable: E = 180 GPa), x un coeficiente que depende de los grados de libertad del vástago (x = 0.25), Fs el factor de seguridad (F_S = 2), J el segundo momento de inercia y d el diámetro del vástago.
-        </p>
-           
-          
-      <br/>
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6WZE9tlFO-Cg68H15u_wGUIvhls6eowiHxyX6LrzejI2gR44qIRRcfmjWx0LuUg/pubhtml?widget=true&amp;headers=false"width="100%" height="600" scrolling="no" frameborder="0"></iframe>
+        <h2>Actuadores</h2>
+      </div>
+    <p>Los dispositivos para los cuales se aplica el proceso de selección son los siguientes:</p>
+    <ul>
+      <li>Cilindro de sujeción (2).</li>
+      <li>Cilindro para el corte con sierra (2).</li>
+      <li>Cilindro para el corte con copa sierra (1).</li>
+      <li>Válvula de control de paso (5).</li>
+    </ul>
+    <h3>Estimación de las fuerzas de máquina (FM)</h3>
+    <p>Para determinar la fuerza que debían imprimir los cilindros para realizar el corte de los tubos de aluminio y de bambú, se encontró en primera instancia los siguientes datos:
+    </p>
+    <ul>
+      <li>Fuerza específica de corte promedio de las diferentes aleaciones de aluminio: 750 N/mm^2</li>
+      <li>Rango de fuerza específica de corte de las aleaciones de aluminio: 350 – 1350 N/mm^2</li>
+      <li>Rango de fuerza específica de corte de las aleaciones de aluminio: 350 – 1350 N/mm^2</li>
+      <li>Dureza del aluminio 6061 (material de trabajo): 95 HB</li>
+      <li>Rango de dureza de las aleaciones de aluminio: 35 - 140</li>
+    </ul>    
+
+<p>Debido a que la fuerza específica de corte de un material está relacionada directamente con la dureza que presente, se realizó una interpolación para estimar la fuerza específica de corte del aluminio 6061, y a continuación se promedió con la fuerza específica de las aleaciones de aluminio.</p>
+<div align="center"><img src="assets/img/Ecuaciones/eq1.PNG"></div>
+    <p>De propuesto una viruta 1 mm de espesor y la sierra cuenta con un espesor de diente de 1 mm, con lo cual la fuerza de corte es de 835.71 N. </p>
+    <p>Por dimensiones de la máquina el cilindro debe aplicar una fuerza menor</p>
+<div align="center"><img src="assets/img/Ecuaciones/eq2.PNG"></div>
+<p>En el caso de los tubos de bambú se encontraron los siguientes parámetros:</p>
+<ul>
+  <li>Fuerza específica de corte de la especie Haya: 51 N/mm^2</li>
+  <li>Dureza de la especie Haya: 2.8 HB</li>
+  <li>Dureza del bambú: 4 HB</li>
+</ul>  
+<p>Se aplicó una relación proporcional, obteniendo una fuerza específica de corte para el bambú de 72.86 N/mm^2. Se propuso las mismas condiciones para tener una fuerza de corte de 72.86 N y por las dimensiones de la máquina la fuerza de máquina resulto de 36.43 N.</p>
+<p>Por último se determinó la fuerza que debían aplicar los cilindros encargados de sujetar los tubos con las cadenas, para lo cual se obtuvieron los siguientes coeficientes de fricción:</p>
+<ul>
+  <li>Coeficiente de fricción aluminio – aluminio: 1.1 </li>
+  <li>Coeficiente de fricción aluminio – madera: 0.25 </li>
+</ul>
+<p>Con base en las fuerzas de corte se calculó una fuerza normal requerida para el aluminio de 760N y para el bambú de 291 N. Para el cilindro de sujeción del bambú se toma el valor calculado mientras que para el aluminio se toma el valor de fuerza de corte al ser mayor.</p>
+
+<h3>Selección de cilindros</h3>
+<p>Para seleccionar los cilindros adecuados se parte de la siguiente información:</p>
+<div align="center"><img src="assets/img/Ecuaciones/t1.PNG"></div>
+<p>Se definieron los siguientes parámetros teniendo en cuenta las especificaciones encontradas en los catálogos para los cilindros:</p>
+<div align="center"><img src="assets/img/Ecuaciones/t2.PNG"></div>
+<p>Para estimar la fuerza que debe ejercer el cilindro, su área mínima y la fuerza de pandeo que debe soportar, se implementan las siguientes ecuaciones:</p>
+<div align="center"><img src="assets/img/Ecuaciones/t3.PNG"></div>
+<p>Para determinar la fuerza de pandeo se implementó la siguiente ecuación:</p>
+<div align="center"><img src="assets/img/Ecuaciones/t4.PNG"></div>
+
+<p>Siendo E el módulo de elasticidad (acero inxodiable: E = 180 GPa), x un coeficiente que depende de los grados de libertad del vástago, F_S el factor de seguridad (F_S = 4), J el segundo momento de inercia y d el diámetro del vástago (a los cilindros sometidos solo a esfuerzos de tracción no se les calculó la fuerza de pandeo). </p>
+<p>Finalmente se consulta el catálogo de la compañía SMC y se encuentran los siguientes dispositivos que satisfacen los requisitos previamente calculados. En la siguiente tabla se presentan las características de los cilindros seleccionados junto con sus referencias.</p>
+<div align="center"><img src="assets/img/Ecuaciones/t5.PNG"></div>
+<p>Finalmente se determina la fuerza disponible de cada cilindro.</p>
+<div align="center"><img src="assets/img/Ecuaciones/t6.PNG"></div>
+
+<h3>Selección de válvulas</h3>
+<p>Para elegir las válvulas más apropiadas para los cilindros seleccionados, se calcula el caudal de ida o acción y el caudal de retorno a partir de las velocidades de propuestas, y posteriormente se calcula el kv de cada uno ellos proponiendo una caída de presión en cada una de las válvulas de 1 bar. Finalmente se hace la conversión a cv y se buscan en el catálogo de SMC válvulas con un cv mayor o igual al calculado para cada caso. </p>
+<div align="center"><img src="assets/img/Ecuaciones/eq3.png"></div>
+<p>Cómo válvula reguladora de selección se consideró la AP100-02 y para control de caudal la AS2051F-08.</p>
+
+<section class="service-details" data-aos="fade-up" date-aos-delay="200">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="card">
+          <p>Válvula para control de caudal.</p>
+          <img src="assets/img/Sensores y Actuadores/valvula caudal.png">
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="card">
+          <p>Válvula reguladora de presión.</p>
+          <img src="assets/img/Sensores y Actuadores/Valvula presion.png">
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-
-  </main><!-- End #main -->
+<div class="section-title">
+  <h2>Sensores</h2>
+</div>
+<p>Para la selección de los sensores se tuvo en cuenta:</p>
+<ul>
+  <li>El voltaje seleccionado para la estación (24 V).</li>
+  <li>El tipo de cilindro seleccionado.</li>
+  <li>Condiciones de trabajo.</li>
+  <li>Tipo de montaje.</li>
+  <li>Programas de control diseñados.</li>
+</ul>
+<p>Se elige el sensor de proximidad inductivo Lj12a3-4-z/bx para la detección de los tubos a la salida de la banda transportadora de la entrada. </p>
+<div align="center"><img src="assets/img/Sensores y Actuadores/sensores.png"></div>
+<p>Y se eligieron los sensores D-M9P, los cuales son detectores de estado sólido resistentes al agua y al polvo con posibilidad de montaje directo sobre los cilindros y salida directa con un modelo de montaje en banda, en el cual por cada cilindro se tendrían dos sensores, como se muestra en la siguiente imagen. Adicionalmente, se muestran sus principales características:</p>
+<div align="center"><img src="assets/img/Sensores y Actuadores/sensores2.png"></div>
+</main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
