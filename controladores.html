@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact</title>
+  <title>Controladores Industriales PLC</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -27,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -43,7 +46,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a  href="index.html">Inicio</a></li>
           <li class="dropdown"><a class="active"  href="#"><span>Módulos</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="planeacion.html">Gestión de Proyecto</a></li>
@@ -66,126 +69,119 @@
     </div>
   </header><!-- End Header -->
 
- <!-- <main id="main">
-  
-    <!--======= Contact Section =======
+  <main id="main">
+
+    <!-- ======= Our Services Section =======-->
     <section class="breadcrumbs">
       <div class="container">
-  
+
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Contact</h2>
+          <h2>Controladores Industriales PLC.</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Contact</li>
+            <li>Controladores Industriales PLC</li>
           </ol>
         </div>
-  
+
       </div>
     </section>
-  
-    <!--======= Contact Section =======
-    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Controladores Industriales PLC</h2>
+        <p>Se utilizó el software Studio 5000 y el lenguaje de programación ladder para elaborar el programa de control de las máquinas automatizadas. </p>
+      <br/>
+    </div>
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-  
+
         <div class="row">
-  
-          <div class="col-lg-6">
-  
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-                </div>
-              </div>
+          <div class="col-lg-6 video-box">
+            <img src="assets/img/PLC/plc1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+              <h4>Máquina para corte de bambú.</h4>
+              <p>El programa correspondiente a la máquina de corte de bambú funciona de la siguiente forma:</p>
+              <ul>
+                <li>0.	Mediante una señal de inicio se activa y se enclava la banda transportadora.</li>
+                <li>1.	Al activarse el sensor de la banda transportadora se activa un temporalizador el cual cuenta el tiempo requerido para que el tubo se ubique a una determinada distancia siendo trasladado a la velocidad de la banda transportadora. </li>
+                <li>2.	La banda también se puede activar cuando se completa una vez la rutina diseñada.</li>
+                <li>3.	Una vez el temporizador finaliza y la banda se detiene, se activa el cilindro del sistema de sujeción. Se da una espera mientras es ajustado el tubo.</li>
+                <li>4.	Cumplido el tiempo para ajustar, se activa el cilindro y el motor de la sierra para proceder con el corte del material.</li>
+                <li>5.	Cuando el cilindro se extiende completamente el proceso de corte finaliza y el cilindro inmediatamente se contrae, retornando la sierra a su posición inicial. Se utiliza un contador para diferenciar la posición inicial antes y después de realizar el corte.</li>
+                <li>6.	Luego el cilindro sistema de sujeción se expande para soltar el tubo y apenas llega a su extensión total inicia un nuevo proceso de corte.</li>
+              </ul>
             </div>
-  
+
           </div>
-  
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-  
         </div>
-  
+
       </div>
     </section>
-  
-    <!--======= Map Section =======
-    <section class="map mt-2">
-      <div class="container-fluid p-0">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg"
-          frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 video-box">
+            <img src="assets/img/PLC/plc2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+              <h4>Máquina para corte tipo boca de pescado y tipo transversal en tubos de aluminio.</h4>
+              <P>La parte inicial de programa de control perteneciente a la máquina de boca de pescado es muy similar al de la máquina de corte de bambú. En la línea 3 se diferencia en que mientras se hace la sujeción del tubo, el posicionador va ubicando la herramienta copa sierra en ángulo de corte deseado.  En este caso primero se activa el copa sierra, corta, regresa y luego se activa la sierra. En la línea 8 cuando ambos procesos han finalizado el cilindro del sistema de sujeción se expande, liberando así el tumbo para proceder con el siguiente corte.</P>
+            </div>
+            
+
+          </div>
+        </div>
+
       </div>
-    </section>End Map Section
-  
-  </main> -->
-
-<!-- ======= Footer ======= -->
-<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-  <div class="container">
-    <div class="credits">
-      Repositorio de Trabajo en Github (Enlace)
-      <a href="https://github.com/APM2021-1" class="github"><i class="bx bxl-github"></i></a> &nbsp  &nbsp    &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp&nbsp  &nbsp    &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
-      <img src="assets/img/Escudo1.png">  
-      <img src="assets/img/Escudo2.png"> 
+    </section>
+    <div class="row">
+      <div class="card">
+        <div class="card-body" style="text-align:center;">
+          <h5 class="card-title">Video Simulación</a></h5>
+          <iframe src="https://drive.google.com/file/d/1coQxwkBJt2SGt5d2_30I7x4sSg8S1Plm/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+      </div>
     </div>
   </div>
-</footer>
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-    class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/purecounter/purecounter.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  </main><!-- End #main -->
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="container">
+      <div class="credits">
+        Repositorio de Trabajo en Github (Enlace)
+        <a href="https://github.com/APM2021-1" class="github"><i class="bx bxl-github"></i></a> &nbsp  &nbsp    &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp&nbsp  &nbsp    &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <img src="assets/img/Escudo1.png">  
+        <img src="assets/img/Escudo2.png"> 
+      </div>
+    </div>
+  </footer>
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
